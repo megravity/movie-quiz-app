@@ -8,10 +8,10 @@
 - clone the fork to your machine
 - `cd` into the `movie-quiz` directory
 - use the command `npm i`
-- enter these commands 
-- ```git remote add upstream git@github.com:megravity/movie-quiz-app.git```
-- ```git fetch upstream```
-- ```git rebase upstream/main```
+- enter these commands:
+  - ```git remote add upstream git@github.com:megravity/movie-quiz-app.git```
+  - ```git fetch upstream```
+  - ```git rebase upstream/main```
 
 ### Project structure & guidelines
 
