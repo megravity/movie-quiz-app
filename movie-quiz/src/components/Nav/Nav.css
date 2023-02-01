@@ -1,0 +1,12 @@
+nav {
+    width: 100ch;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 60px;
+}
+nav h5 {
+    font-family: sans-serif;
+    font-size: 1em;
+}
