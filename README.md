@@ -1,2 +1,2 @@
-# movie-quiz-app
+# Movie Quiz App
 Simple React based movie quiz.
