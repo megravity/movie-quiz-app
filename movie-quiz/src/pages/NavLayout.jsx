@@ -5,7 +5,9 @@ const NavLayout = () => {
   return (
     <>
       <Nav />
-      <Outlet />
+      <div className="bg-img-container">
+        <Outlet />
+      </div>
       <footer>Made with ❤️</footer>
     </>
   );
