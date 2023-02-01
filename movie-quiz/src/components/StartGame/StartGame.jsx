@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./StartGame.css";
 
 const StartGame = () => {
   return (
@@ -11,7 +12,9 @@ const StartGame = () => {
         <li>Only 1 answer is true</li>
         <li>Your final score will be shown in %</li>
       </ol>
-      <Link to="/game">Start Game</Link>
+      <Link className="btn btn-start-game" to="/game">
+        Start Game
+      </Link>
     </div>
   );
 };
