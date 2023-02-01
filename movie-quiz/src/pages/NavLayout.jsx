@@ -1,18 +1,10 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import Nav from "../components/Nav/Nav";
 
 const NavLayout = () => {
   return (
     <>
-      <nav>
-        <ul>
-          <li>
-            <NavLink to="/">Movie Quiz</NavLink>
-          </li>
-          <li>
-            <NavLink to="help">Help</NavLink>
-          </li>
-        </ul>
-      </nav>
+      <Nav />
       <Outlet />
       <footer>Made with ❤️</footer>
     </>
