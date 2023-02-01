@@ -3,6 +3,7 @@ import Error from "./pages/Error";
 import Help from "./pages/Help";
 import Home from "./pages/Home";
 import NavLayout from "./pages/NavLayout";
+import GamePage from "./pages/GamePage";
 import "./styles/App.css";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<NavLayout />}>
           <Route index element={<Home />} />
           <Route path="help" element={<Help />} />
+          <Route path="game" element={<GamePage />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>
