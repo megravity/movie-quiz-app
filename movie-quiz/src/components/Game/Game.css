@@ -1,16 +1,31 @@
 .home-bg-img-start {
-    padding-top: 150px;
-    height: 700px;
-    background-repeat: no-repeat;
-    background-size: cover;
+  padding: 150px;
+  min-height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    background-image: url('https://m.media-amazon.com/images/M/MV5BNzU4NWEwNDItMzMzYy00ZDYyLWIxZjMtMDlkYWVjNjQwYzBjXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_FMjpg_UX1000_.jpg');
+  background-image: url("https://m.media-amazon.com/images/M/MV5BNzU4NWEwNDItMzMzYy00ZDYyLWIxZjMtMDlkYWVjNjQwYzBjXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_FMjpg_UX1000_.jpg");
 }
-.box-qestion {
-    color: #332200;
-    height: 500px;
-    margin: 0 auto;
-    width: 60%;
-    padding-top: 10px;
-    background-color: bisque;
+.box-question {
+  color: #332200;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 4rem;
+  width: fit-content;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.question {
+  background-color: white;
+  width: 95%;
+  padding: 2rem;
+}
+
+.answers {
+  display: flex;
+  gap: 0.5rem;
 }

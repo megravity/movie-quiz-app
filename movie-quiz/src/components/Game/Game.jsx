@@ -1,4 +1,4 @@
-import '../Game/Game.css';
+import "../Game/Game.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
 const KEY = import.meta.env.VITE_API_KEY;
@@ -7,6 +7,7 @@ const Game = () => {
   const imgBaseUrl = "https://image.tmdb.org/t/p/w1280/";
   const [img, setImg] = useState("");
   const [movies, setMovies] = useState([]);
+  const [solution, setSolution] = useState({});
 
   const generateMovies = (movies) => {
     const indexes = [];
@@ -39,14 +40,31 @@ const Game = () => {
   }, []);
 
   useEffect(() => {
-    if (movies.length > 0) setImg(movies[0].backdrop_path);
+    if (movies.length > 0) {
+      const chosenMovie = movies[Math.floor(Math.random() * 4)];
+      setSolution(chosenMovie);
+      setImg(chosenMovie.backdrop_path);
+    }
   }, [movies]);
 
-  return (<div className='home-bg-img-start'>
-        {img && <img src={imgBaseUrl + img} alt="" />}
-        <div className='box-qestion'></div>
-      </div>);
+  console.log(movies);
 
+  return (
+    <div className="home-bg-img-start">
+      <div className="box-question">
+        {img && <img src={imgBaseUrl + img} alt="" />}
+        <h2 className="question">Which movie is this?</h2>
+        {movies.length > 0 && (
+          <div className="answers">
+            <button className="answer">{movies[0].title}</button>
+            <button className="answer">{movies[1].title}</button>
+            <button className="answer">{movies[2].title}</button>
+            <button className="answer">{movies[3].title}</button>
+          </div>
+        )}
+      </div>
+    </div>
+  );
 };
 
 export default Game;
