@@ -1,10 +1,6 @@
-import StartGame from "../components/StartGame/StartGame";
+import StartGame from '../components/StartGame/StartGame';
 
 const Home = () => {
-  return (
-    <div>
-      <StartGame />
-    </div>
-  );
+    return <StartGame />;
 };
 export default Home;
