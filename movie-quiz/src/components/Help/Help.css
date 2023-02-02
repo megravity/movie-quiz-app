@@ -1,0 +1,14 @@
+.rules-text-container-help {
+    color: #332200;
+    height: 500px;
+    margin: 0 auto;
+    width: 60%;
+    padding-top: 10px;
+    background-color: bisque;
+    font-size: 30px;
+}
+.rules-text-container-help ol li {
+    text-align: left;
+    margin-left: 25%;
+    padding: 10px;
+}

@@ -6,7 +6,7 @@
 
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
+    background-color: #1c1303;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -25,8 +25,9 @@ a:hover {
 }
 
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: #1c1303;
     margin: 0;
+    padding: 0;
     display: flex;
     place-items: center;
     min-width: 320px;
@@ -36,6 +37,9 @@ body {
 h1 {
     font-size: 3.2em;
     line-height: 1.1;
+}
+h5 {
+    font-size: 1.4rem;
 }
 
 button {

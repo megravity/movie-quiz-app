@@ -1,7 +1,10 @@
 #root {
-    background-color: #1c1303;
+    padding: 90px;
+
+    width: 100%;
+    background-color: #332200;
     max-width: 100%;
     margin: 0 auto;
-    padding: 2rem;
+
     text-align: center;
 }
