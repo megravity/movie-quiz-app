@@ -12,3 +12,10 @@
     margin-left: 25%;
     padding: 10px;
 }
+.home-bg-img {
+    padding-top: 150px;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Popcorn02.jpg/1200px-Popcorn02.jpg');
+}

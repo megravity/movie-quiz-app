@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import Error from './pages/Error';
 import Help from './components/Help/Help';
 import Home from './pages/Home';
-import NavLayout from './components/NavLayout/NavLayout';
+import NavLayout from './pages/NavLayout';
 import GamePage from './pages/GamePage';
 import './styles/App.css';
 
