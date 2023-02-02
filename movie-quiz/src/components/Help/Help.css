@@ -1,24 +1,14 @@
-.btn-start-game {
-    color: #332200;
-    padding: 1rem;
-    background-color: #ffb31a;
-    display: block;
-    margin: 50px auto;
-    width: 8rem;
-    font-size: 30px;
-    font-weight: 900;
-}
-.rules-text-container {
+.rules-text-container-help {
     color: #332200;
     height: 500px;
     margin: 0 auto;
     width: 60%;
     padding-top: 10px;
     background-color: bisque;
-}
-.rules-text-container ol li {
-    text-align: left;
     font-size: 30px;
+}
+.rules-text-container-help ol li {
+    text-align: left;
     margin-left: 25%;
     padding: 10px;
 }

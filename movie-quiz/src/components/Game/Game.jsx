@@ -1,3 +1,4 @@
+import '../Game/Game.css';
 import axios from "axios";
 import { useState, useEffect } from "react";
 const KEY = import.meta.env.VITE_API_KEY;
@@ -41,6 +42,11 @@ const Game = () => {
     if (movies.length > 0) setImg(movies[0].backdrop_path);
   }, [movies]);
 
-  return <div>{img && <img src={imgBaseUrl + img} alt="" />}</div>;
+  return (<div className='home-bg-img-start'>
+        {img && <img src={imgBaseUrl + img} alt="" />}
+        <div className='box-qestion'></div>
+      </div>);
+
 };
+
 export default Game;
