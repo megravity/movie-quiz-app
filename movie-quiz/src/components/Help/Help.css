@@ -1,21 +1,19 @@
 .rules-text-container-help {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     color: #332200;
-    height: 500px;
+    height: 700px;
     margin: 0 auto;
-    width: 60%;
-    padding-top: 10px;
+    width: 65%;
+
     background-color: bisque;
+}
+.rules-text-container-help ol {
+    text-align: left;
     font-size: 30px;
 }
 .rules-text-container-help ol li {
-    text-align: left;
-    margin-left: 25%;
-    padding: 10px;
-}
-.home-bg-img {
-    padding-top: 150px;
-    height: 700px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Popcorn02.jpg/1200px-Popcorn02.jpg');
+    padding: 20px;
 }
