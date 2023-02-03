@@ -79,39 +79,41 @@ const Game = () => {
       <div className="box-question">
         <h2>You've played {plays} out of 5 rounds</h2>
         {img && <img src={imgBaseUrl + img} alt="" />}
-        <h2 className="question">Which movie is this?</h2>
-        {movies.length > 0 && (
-          <div className="answers">
-            <button
-              className="answer"
-              value={movies[0].title}
-              onClick={handleButtonClick}
-            >
-              {movies[0].title}
-            </button>
-            <button
-              className="answer"
-              value={movies[1].title}
-              onClick={handleButtonClick}
-            >
-              {movies[1].title}
-            </button>
-            <button
-              className="answer"
-              value={movies[2].title}
-              onClick={handleButtonClick}
-            >
-              {movies[2].title}
-            </button>
-            <button
-              className="answer"
-              value={movies[3].title}
-              onClick={handleButtonClick}
-            >
-              {movies[3].title}
-            </button>
-          </div>
-        )}
+        <div className="question-answer-container">
+          <h2 className="question">Which movie is this?</h2>
+          {movies.length > 0 && (
+            <div className="answers">
+              <button
+                className="answer"
+                value={movies[0].title}
+                onClick={handleButtonClick}
+              >
+                {movies[0].title}
+              </button>
+              <button
+                className="answer"
+                value={movies[1].title}
+                onClick={handleButtonClick}
+              >
+                {movies[1].title}
+              </button>
+              <button
+                className="answer"
+                value={movies[2].title}
+                onClick={handleButtonClick}
+              >
+                {movies[2].title}
+              </button>
+              <button
+                className="answer"
+                value={movies[3].title}
+                onClick={handleButtonClick}
+              >
+                {movies[3].title}
+              </button>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

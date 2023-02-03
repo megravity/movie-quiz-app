@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import Error from "./pages/Error";
+import ErrorPage from "./pages/ErrorPage";
 import Home from "./pages/Home";
 import NavLayout from "./pages/NavLayout";
 import GamePage from "./pages/GamePage";
@@ -16,7 +16,7 @@ function App() {
           <Route path="help" element={<HelpPage />} />
           <Route path="game" element={<GamePage />} />
           <Route path="end" element={<End />} />
-          <Route path="*" element={<Error />} />
+          <Route path="*" element={<ErrorPage />} />
         </Route>
       </Routes>
     </div>
