@@ -1,30 +1,33 @@
 .btn-start-game {
+    border-radius: 8px;
     color: #332200;
-    padding: 1rem;
     background-color: #ffb31a;
     display: block;
-    margin: 50px auto;
+    border: 1px#332200 solid;
     width: 8rem;
     font-size: 30px;
     font-weight: 900;
 }
 .rules-text-container {
     color: #332200;
-    height: 500px;
+    height: 85%;
     margin: 0 auto;
+    padding: 4rem;
     width: 60%;
-    padding-top: 10px;
     background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.rules-text-container ol li {
+.rules-text-container ol {
     text-align: left;
     font-size: 30px;
-    margin-left: 25%;
-    padding: 10px;
+}
+.rules-text-container ol li {
+    padding: 20px;
 }
 .home-bg-img {
-    padding-top: 150px;
-    height: 700px;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Popcorn02.jpg/1200px-Popcorn02.jpg');
