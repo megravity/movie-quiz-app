@@ -1,6 +1,7 @@
 import "../Game/Game.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 const KEY = import.meta.env.VITE_API_KEY;
 
 const Game = () => {
@@ -8,6 +9,9 @@ const Game = () => {
   const [img, setImg] = useState("");
   const [movies, setMovies] = useState([]);
   const [solution, setSolution] = useState({});
+  const [plays, setPlays] = useState(0);
+  const [correctGuesses, setCorrectGuesses] = useState(0);
+  const navigate = useNavigate();
 
   const generateMovies = (movies) => {
     const indexes = [];
@@ -28,7 +32,6 @@ const Game = () => {
       const { data } = await axios.get(
         `https://api.themoviedb.org/3/movie/top_rated?api_key=${KEY}&language=en-US&page=${page}`
       );
-
       setMovies(generateMovies(data.results));
     } catch (error) {
       console.log(error);
@@ -44,22 +47,37 @@ const Game = () => {
       const chosenMovie = movies[Math.floor(Math.random() * 4)];
       setSolution(chosenMovie);
       setImg(chosenMovie.backdrop_path);
+      console.log(chosenMovie.title);
     }
   }, [movies]);
 
   const handleButtonClick = (e) => {
     console.log(e.target.value);
     const choice = e.target.value;
+    checkIfCorrect(choice);
+    setPlays((prevPlays) => prevPlays + 1);
+    checkGameOver();
+    getMovieData();
+  };
+
+  const checkGameOver = () => {
+    console.log(correctGuesses);
+    if (plays >= 5) {
+      navigate("/end", { state: correctGuesses });
+    }
+  };
+
+  const checkIfCorrect = (choice) => {
     if (choice === solution.title) {
       console.log("correct");
-    } else {
-      console.log("false");
+      setCorrectGuesses((correctGuesses) => correctGuesses + 1);
     }
   };
 
   return (
     <div className="home-bg-img-start">
       <div className="box-question">
+        <h2>You've played {plays} out of 5 rounds</h2>
         {img && <img src={imgBaseUrl + img} alt="" />}
         <h2 className="question">Which movie is this?</h2>
         {movies.length > 0 && (

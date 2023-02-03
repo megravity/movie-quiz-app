@@ -5,6 +5,7 @@ import NavLayout from "./pages/NavLayout";
 import GamePage from "./pages/GamePage";
 import "./styles/App.css";
 import HelpPage from "./pages/HelpPage";
+import End from "./components/End/End";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="help" element={<HelpPage />} />
           <Route path="game" element={<GamePage />} />
+          <Route path="end" element={<End />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>
