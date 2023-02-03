@@ -47,7 +47,15 @@ const Game = () => {
     }
   }, [movies]);
 
-  console.log(movies);
+  const handleButtonClick = (e) => {
+    console.log(e.target.value);
+    const choice = e.target.value;
+    if (choice === solution.title) {
+      console.log("correct");
+    } else {
+      console.log("false");
+    }
+  };
 
   return (
     <div className="home-bg-img-start">
@@ -56,10 +64,34 @@ const Game = () => {
         <h2 className="question">Which movie is this?</h2>
         {movies.length > 0 && (
           <div className="answers">
-            <button className="answer">{movies[0].title}</button>
-            <button className="answer">{movies[1].title}</button>
-            <button className="answer">{movies[2].title}</button>
-            <button className="answer">{movies[3].title}</button>
+            <button
+              className="answer"
+              value={movies[0].title}
+              onClick={handleButtonClick}
+            >
+              {movies[0].title}
+            </button>
+            <button
+              className="answer"
+              value={movies[1].title}
+              onClick={handleButtonClick}
+            >
+              {movies[1].title}
+            </button>
+            <button
+              className="answer"
+              value={movies[2].title}
+              onClick={handleButtonClick}
+            >
+              {movies[2].title}
+            </button>
+            <button
+              className="answer"
+              value={movies[3].title}
+              onClick={handleButtonClick}
+            >
+              {movies[3].title}
+            </button>
           </div>
         )}
       </div>
