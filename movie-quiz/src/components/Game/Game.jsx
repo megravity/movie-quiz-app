@@ -2,7 +2,13 @@ import "../Game/Game.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-const KEY = import.meta.env.VITE_API_KEY;
+let KEY;
+if (import.meta.env.mode === "production") {
+  KEY = import.meta.env.KEY;
+} else {
+  KEY = import.meta.env.VITE_API_KEY;
+}
+console.log(import.meta.env);
 
 const Game = () => {
   const imgBaseUrl = "https://image.tmdb.org/t/p/w1280/";
