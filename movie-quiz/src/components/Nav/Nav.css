@@ -5,8 +5,3 @@
     display: flex;
     justify-content: space-between;
 }
-.navigator {
-    width: 90%;
-    position: fixed;
-    top: 20px;
-}
