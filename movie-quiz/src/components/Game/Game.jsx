@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 let KEY;
 if (import.meta.env.mode === "production") {
-  KEY = process.env.KEY;
+  KEY = process.env.API_KEY;
 } else {
   KEY = import.meta.env.VITE_API_KEY;
 }
