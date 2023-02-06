@@ -2,11 +2,11 @@ import "../Game/Game.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-let KEY;
+let API_KEY;
 if (import.meta.env.mode === "production") {
-  KEY = process.env.API_KEY;
+  API_KEY = process.env.API_KEY;
 } else {
-  KEY = import.meta.env.VITE_API_KEY;
+  API_KEY = import.meta.env.VITE_API_KEY;
 }
 console.log(import.meta.env);
 
@@ -36,7 +36,7 @@ const Game = () => {
     try {
       const page = Math.floor(Math.random() * 10) + 1;
       const { data } = await axios.get(
-        `https://api.themoviedb.org/3/movie/top_rated?api_key=${KEY}&language=en-US&page=${page}`
+        `https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}&language=en-US&page=${page}`
       );
       setMovies(generateMovies(data.results));
     } catch (error) {
