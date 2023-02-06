@@ -6,7 +6,7 @@
     /* scrollbar-width: none; */
     color: #332200;
 
-    width: 65%;
+    width: fit-content;
     height: fit-content;
     margin: 0 auto;
     padding: 4rem;
