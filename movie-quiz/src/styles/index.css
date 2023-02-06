@@ -146,7 +146,7 @@ button:focus-visible {
         font-size: 30px;
     }
 }
-@media screen and (max-width: 90%) and (min-width: 651px) {
+@media screen and (max-width: 1280px) and (min-width: 651px) {
     #root {
         margin: 0;
         padding: 0;
