@@ -2,12 +2,14 @@ import "../Game/Game.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-let API_KEY;
+/* let API_KEY;
 if (import.meta.env.mode === "production") {
   API_KEY = process.env.API_KEY;
 } else {
   API_KEY = import.meta.env.VITE_API_KEY;
-}
+} */
+
+const API_KEY = import.meta.env.VITE_API_KEY;
 console.log(import.meta.env);
 
 const Game = () => {
