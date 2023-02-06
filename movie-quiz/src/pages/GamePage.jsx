@@ -1,10 +1,6 @@
 import Game from "../components/Game/Game";
 
 const GamePage = () => {
-  return (
-    <div>
-      <Game />
-    </div>
-  );
+  return <Game />;
 };
 export default GamePage;

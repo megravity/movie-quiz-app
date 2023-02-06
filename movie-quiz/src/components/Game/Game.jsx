@@ -52,7 +52,6 @@ const Game = () => {
   }, [movies]);
 
   const handleButtonClick = (e) => {
-    console.log(e.target.value);
     const choice = e.target.value;
     checkIfCorrect(choice);
     setPlays((prevPlays) => prevPlays + 1);
