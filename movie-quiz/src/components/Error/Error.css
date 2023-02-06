@@ -1,0 +1,14 @@
+.error {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    color: #332200;
+    height: 700px;
+    margin: 0 auto;
+    width: 65%;
+    background-image: url('https://blog.fluidui.com/assets/images/posts/imageedit_1_9273372713.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: bisque;
+}

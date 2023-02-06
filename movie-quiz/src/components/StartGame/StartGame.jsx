@@ -8,10 +8,10 @@ const StartGame = () => {
                 <h1>Welcome to our best movie app</h1>
                 <h2>The rules are:</h2>
                 <ol>
-                    <li>20 Movies - 4 questions each</li>
-                    <li>Look at the image and answer the question</li>
-                    <li>Only 1 answer is true</li>
-                    <li>Your final score will be shown in %</li>
+                    <li>5 Movies & 5 questions.</li>
+                    <li>Look at the image and answer the question.</li>
+                    <li>Only 1 answer is true.</li>
+                    {/* <li>Your final score will be shown in %</li> */}
                 </ol>
                 <Link className='btn btn-start-game' to='/game'>
                     Start Game

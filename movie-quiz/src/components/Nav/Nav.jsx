@@ -3,7 +3,7 @@ import './Nav.css';
 
 const Nav = () => {
     return (
-        <nav>
+        <nav className='navigator'>
             <ul>
                 <li>
                     <NavLink to='/'>
