@@ -1,14 +1,12 @@
-nav ul {
-  list-style: none;
-  padding-left: 0px;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
+.navigator ul {
+    list-style: none;
+    padding-left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
-
-/* @media screen and (max-width: 600px) {
-    nav ul {
-        justify-content: center;
-        background-color: rgb(125, 38, 38);
-    }
-} */
+.navigator {
+    width: 90%;
+    position: fixed;
+    top: 20px;
+}

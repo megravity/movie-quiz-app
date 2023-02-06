@@ -1,4 +1,6 @@
 .btn-start-game {
+    padding: 3px;
+    line-height: 120%;
     border-radius: 8px;
     color: #332200;
     background-color: #ffb31a;
