@@ -1,10 +1,6 @@
 import Help from "../components/Help/Help";
 
 const HelpPage = () => {
-  return (
-    <>
-      <Help />
-    </>
-  );
+  return <Help />;
 };
 export default HelpPage;
