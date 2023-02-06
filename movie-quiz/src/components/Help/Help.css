@@ -1,19 +1,19 @@
 .rules-text-container-help {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #332200;
-    height: 650px;
-    margin: 0 auto;
-    width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #332200;
+  height: 650px;
+  margin: 0 auto;
+  width: 60%;
 
-    background-color: bisque;
+  background-color: bisque;
 }
 .rules-text-container-help ol {
-    text-align: left;
-    font-size: 30px;
+  text-align: left;
+  font-size: 30px;
 }
 .rules-text-container-help ol li {
-    padding: 20px;
+  padding: 20px;
 }
