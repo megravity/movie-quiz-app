@@ -19,4 +19,4 @@
 - Components and there corresponding styles should be in a separate directory like `/components/ExampleComponent`
   - In this examples the `ExampleComponent` directory should contain `ExampleComponent.jsx` and `ExampleComponent.css`
 
-Hosted: https://movie-quiz-9ikbh0se4-megravity.vercel.app/
+Hosted: https://movie-quiz-app.vercel.app/
